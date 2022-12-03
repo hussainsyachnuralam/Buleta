@@ -14,7 +14,6 @@ class _MainTabState extends State<MainTab> with SingleTickerProviderStateMixin {
     Tab(child: Text("Berita")),
     Tab(child: Text("Agenda")),
     Tab(child: Text("Berita Foto")),
-    Tab(child: Text("Berita")),
     Tab(child: Text("Profil")),
   ];
 
@@ -31,7 +30,8 @@ class _MainTabState extends State<MainTab> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return DefaultTabController(
+      length: 5,
       child: Scaffold(
         appBar: AppBar(
           title: Text(
@@ -71,6 +71,13 @@ class _MainTabState extends State<MainTab> with SingleTickerProviderStateMixin {
             tabs: topTabs,
           ),
         ),
+        // body: TabBarView(controller: _tabController, children: [
+        //   Text("Artikel"),
+        //   Text("Artikel"),
+        //   Text("Artikel"),
+        //   Text("Artikel"),
+        //   Text("Artikel"),
+        // ]),
       ),
     );
   }
