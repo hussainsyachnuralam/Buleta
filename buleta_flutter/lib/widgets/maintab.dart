@@ -112,7 +112,7 @@ Widget menu() {
           icon: Icon(Icons.newspaper),
         ),
         Tab(
-          text: "Berita Foto",
+          text: "Galeri",
           icon: Icon(Icons.photo),
         ),
         Tab(
