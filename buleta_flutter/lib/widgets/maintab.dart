@@ -1,37 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
-class MainTab extends StatefulWidget {
-  MainTab({Key? key}) : super(key: key);
-
-  @override
-  State<MainTab> createState() => _MainTabState();
-}
-
-class _MainTabState extends State<MainTab> with SingleTickerProviderStateMixin {
-  TabController? _tabController;
-  final List<Tab> topTabs = <Tab>[
-    Tab(child: Text("Artikel")),
-    Tab(child: Text("Berita")),
-    Tab(child: Text("Agenda")),
-    Tab(child: Text("Berita Foto")),
-    Tab(child: Text("Profil")),
-  ];
-
-  @override
-  void initState() {
-    _tabController =
-        TabController(length: topTabs.length, initialIndex: 0, vsync: this)
-          ..addListener(() {
-            setState(() {});
-          });
-
-    super.initState();
-  }
+class MainTab extends StatelessWidget {
+  const MainTab({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 5,
+      length: 4,
+      initialIndex: 0,
       child: Scaffold(
         appBar: AppBar(
           title: Text(
@@ -65,19 +42,19 @@ class _MainTabState extends State<MainTab> with SingleTickerProviderStateMixin {
                   shape: BoxShape.circle, color: Colors.blueGrey[300]),
             ),
           ],
-          bottom: TabBar(
-            controller: _tabController,
-            indicatorColor: Colors.black,
-            tabs: topTabs,
-          ),
         ),
-        // body: TabBarView(controller: _tabController, children: [
-        //   Text("Artikel"),
-        //   Text("Artikel"),
-        //   Text("Artikel"),
-        //   Text("Artikel"),
-        //   Text("Artikel"),
-        // ]),
+        body: SafeArea(
+            child: Column(
+          children: [
+            const TabBar(labelColor: Colors.black, tabs: [
+              Tab(text: 'Home'),
+              Tab(text: 'Artikel'),
+              Tab(text: 'Galeri'),
+              Tab(text: 'Agenda'),
+              // Tab(text: 'Profil')
+            ])
+          ],
+        )),
       ),
     );
   }
