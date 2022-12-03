@@ -90,7 +90,7 @@ Widget menu() {
         ),
         Tab(
           text: "Kontak",
-          icon: Icon(Icons.call),
+          icon: Icon(Icons.contact_phone),
         ),
       ],
     ),
