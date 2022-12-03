@@ -46,13 +46,16 @@ class MainTab extends StatelessWidget {
         body: SafeArea(
             child: Column(
           children: [
-            const TabBar(labelColor: Colors.black, tabs: [
-              Tab(text: 'Home'),
-              Tab(text: 'Artikel'),
-              Tab(text: 'Galeri'),
-              Tab(text: 'Agenda'),
-              // Tab(text: 'Profil')
-            ])
+            const TabBar(
+                labelColor: Colors.black,
+                unselectedLabelColor: Colors.grey,
+                tabs: [
+                  Tab(text: 'Home'),
+                  Tab(text: 'Artikel'),
+                  Tab(text: 'Galeri'),
+                  Tab(text: 'Agenda'),
+                  // Tab(text: 'Profil')
+                ])
           ],
         )),
       ),
