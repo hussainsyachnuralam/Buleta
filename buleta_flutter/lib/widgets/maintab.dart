@@ -75,6 +75,7 @@ Widget menu() {
       indicatorSize: TabBarIndicatorSize.tab,
       indicatorPadding: EdgeInsets.all(5.0),
       indicatorColor: Colors.blue,
+      isScrollable: true,
       tabs: [
         Tab(
           text: "Home",
