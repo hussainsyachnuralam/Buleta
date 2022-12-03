@@ -31,17 +31,43 @@ class MainTab extends StatelessWidget {
             //       shape: BoxShape.circle, color: Colors.blueGrey[300]),
             // ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 10.0),
-              child: IconButton(
-                icon: Icon(Icons.menu),
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                onPressed: () => print('Menu Button Clicked'),
-              ),
-              decoration: BoxDecoration(
-                  shape: BoxShape.circle, color: Colors.blueGrey[300]),
-            ),
+                // margin: EdgeInsets.symmetric(horizontal: 10.0),
+                // child: IconButton(
+                //   icon: Icon(Icons.menu),
+                //   splashColor: Colors.transparent,
+                //   highlightColor: Colors.transparent,
+                //   onPressed: () => print('Menu Button Clicked'),
+                // ),
+                // decoration: BoxDecoration(
+                //     shape: BoxShape.circle, color: Colors.blueGrey[300]),
+                ),
           ],
+        ),
+        drawer: Drawer(
+          child: ListView(
+            children: [
+              ListTile(
+                title: Text("Profil"),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text("Agenda"),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text("Berita Foto"),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text("Syarat & Ketentuan"),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text("Tentang Aplikasi"),
+                onTap: () {},
+              ),
+            ],
+          ),
         ),
         bottomNavigationBar: menu(),
         // body: SafeArea(
