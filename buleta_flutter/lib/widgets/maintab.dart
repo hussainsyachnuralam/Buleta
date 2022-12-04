@@ -5,7 +5,7 @@ import 'package:buleta_flutter/screens/profil.dart';
 import 'package:buleta_flutter/screens/syaratketentuan.dart';
 import 'package:buleta_flutter/screens/tentang.dart';
 import 'package:flutter/material.dart';
-import '';
+import 'package:get/get.dart';
 
 class MainTab extends StatelessWidget {
   const MainTab({Key? key}) : super(key: key);
