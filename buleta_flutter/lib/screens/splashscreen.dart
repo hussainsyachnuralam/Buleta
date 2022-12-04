@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
             SizedBox(
               height: 200,
               width: 200,
-              child: Image.asset("assets/palangkaraya.png"),
+              child: Image.asset("assets/palangkaraya.json"),
             ),
             Text(
               "Media Center",
