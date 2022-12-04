@@ -47,8 +47,12 @@ class _ArtikelState extends State<Artikel> {
                                   child: Container(
                                       margin: EdgeInsets.only(
                                           bottom: 10.0, left: 10.0),
-                                      child: Text(snapshot.data![i]['title']
-                                          ['rendered'])),
+                                      child: Text(
+                                        snapshot.data![i]['title']['rendered'],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold),
+                                      )),
                                 )
                               ],
                             ),
@@ -61,7 +65,7 @@ class _ArtikelState extends State<Artikel> {
                                     .replaceAll("</p>", ""),
                                 maxLines: 4,
                                 overflow: TextOverflow.ellipsis,
-                                style: TextStyle(fontSize: 20),
+                                style: TextStyle(fontSize: 18),
                               ),
                             ),
                             onTap: () {
