@@ -13,7 +13,7 @@ class _ArtikelState extends State<Artikel> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Profil Media Center'),
+          title: Text('Artikel'),
           backgroundColor: Colors.blueGrey,
         ),
         body: Container(

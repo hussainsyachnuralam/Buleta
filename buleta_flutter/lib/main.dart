@@ -1,4 +1,6 @@
+import 'package:buleta_flutter/screens/home.dart';
 import 'package:buleta_flutter/widgets/maintab.dart';
+import 'package:buleta_flutter/widgets/navbar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,8 +17,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: MainTab(),
+      home: NavBAr(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
+
+// import 'package:buleta_flutter/routes/routes.dart';
+// import 'package:flutter/material.dart';
+// import 'package:get/get.dart';
+
+// void main() {
+//   runApp(GetMaterialApp(
+//     debugShowCheckedModeBanner: false,
+//     initialRoute: AppPage.getnavbar(),
+//     getPages: AppPage.routes,
+//   ));
+// }

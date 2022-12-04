@@ -37,6 +37,7 @@ dependencies:
   http: ^0.13.5
   get: ^4.6.5
   get_cli: ^1.8.1
+  iconly: ^1.0.1
 
 dev_dependencies:
   flutter_test:

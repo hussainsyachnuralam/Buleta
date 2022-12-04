@@ -23,18 +23,18 @@ class MainTab extends StatelessWidget {
             ),
           ),
           actions: [
-            // Container(
-            //   child: IconButton(
-            //     icon: Icon(Icons.search),
-            //     splashColor: Colors.transparent,
-            //     highlightColor: Colors.transparent,
-            //     onPressed: () {
-            //       print('Search Button Clicked');
-            //     },
-            //   ),
-            //   decoration: BoxDecoration(
-            //       shape: BoxShape.circle, color: Colors.blueGrey[300]),
-            // ),
+//             // Container(
+//             //   child: IconButton(
+//             //     icon: Icon(Icons.search),
+//             //     splashColor: Colors.transparent,
+//             //     highlightColor: Colors.transparent,
+//             //     onPressed: () {
+//             //       print('Search Button Clicked');
+//             //     },
+//             //   ),
+//             //   decoration: BoxDecoration(
+//             //       shape: BoxShape.circle, color: Colors.blueGrey[300]),
+//             // ),
             Container(
                 // margin: EdgeInsets.symmetric(horizontal: 10.0),
                 // child: IconButton(
@@ -98,41 +98,41 @@ class MainTab extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: menu(),
-        // body: SafeArea(
-        //     child: Column(
-        //   children: [
-        //     const TabBar(
-        //         labelColor: Colors.black,
-        //         unselectedLabelColor: Colors.grey,
-        //         tabs: [
-        //           Tab(text: 'Home'),
-        //           Tab(text: 'Artikel'),
-        //           Tab(text: 'Galeri'),
-        //           Tab(text: 'Agenda'),
-        //           // Tab(text: 'Profil')
-        //         ]),
+//         // body: SafeArea(
+//         //     child: Column(
+//         //   children: [
+//         //     const TabBar(
+//         //         labelColor: Colors.black,
+//         //         unselectedLabelColor: Colors.grey,
+//         //         tabs: [
+//         //           Tab(text: 'Home'),
+//         //           Tab(text: 'Artikel'),
+//         //           Tab(text: 'Galeri'),
+//         //           Tab(text: 'Agenda'),
+//         //           // Tab(text: 'Profil')
+//         //         ]),
 
-        //         Expanded(child: child,)
-        //   ],
-        // )),
+//         //         Expanded(child: child,)
+//         //   ],
+//         // )),
       ),
     );
   }
 }
 
-class Navbar extends StatefulWidget {
-  Navbar({Key? key}) : super(key: key);
+// // class Navbar extends StatefulWidget {
+// //   Navbar({Key? key}) : super(key: key);
 
-  @override
-  State<Navbar> createState() => _NavbarState();
-}
+// //   @override
+// //   State<Navbar> createState() => _NavbarState();
+// // }
 
-class _NavbarState extends State<Navbar> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
-}
+// // class _NavbarState extends State<Navbar> {
+// //   @override
+// //   Widget build(BuildContext context) {
+// //     return Scaffold();
+// //   }
+// // }
 
 Widget menu() {
   return Container(
