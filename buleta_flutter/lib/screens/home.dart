@@ -62,7 +62,7 @@ class _HomeState extends State<Home> {
               ),
               ListTile(
                 leading: Icon(Icons.ballot),
-                title: Text("Syarat & Ketentuan"),
+                title: Text("Kebijakan Privasi"),
                 onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Syarat()));
