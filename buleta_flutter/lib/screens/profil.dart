@@ -23,7 +23,7 @@ class _ProfilState extends State<Profil> {
               child: Container(
                 margin: EdgeInsets.only(bottom: 10.0, left: 10.0),
                 child: Text(
-                  "Profil",
+                  "Profil Media Center",
                   style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                 ),
               ),
