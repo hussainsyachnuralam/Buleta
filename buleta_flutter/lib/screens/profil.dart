@@ -19,15 +19,15 @@ class _ProfilState extends State<Profil> {
         body: ListView(
           padding: EdgeInsets.all(8),
           children: <Widget>[
-            Center(
-              child: Container(
-                margin: EdgeInsets.only(bottom: 10.0, left: 10.0),
-                child: Text(
-                  "Profil Media Center",
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
+            // Center(
+            //   child: Container(
+            //     margin: EdgeInsets.only(bottom: 10.0, left: 10.0),
+            //     child: Text(
+            //       "Profil Media Center",
+            //       style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+            //     ),
+            //   ),
+            // ),
             Image.asset("assets/baliho_mc.jpg"),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 10.0),
