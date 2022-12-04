@@ -1,5 +1,9 @@
+import 'package:buleta_flutter/screens/agenda.dart';
 import 'package:buleta_flutter/screens/artikel.dart';
+import 'package:buleta_flutter/screens/beritafoto.dart';
 import 'package:buleta_flutter/screens/profil.dart';
+import 'package:buleta_flutter/screens/syaratketentuan.dart';
+import 'package:buleta_flutter/screens/tentang.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -59,12 +63,18 @@ class MainTab extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.view_agenda),
                 title: Text("Agenda"),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Artikel()));
+                },
               ),
               ListTile(
                 leading: Icon(Icons.art_track),
                 title: Text("Berita Foto"),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => BeritaFoto()));
+                },
               ),
               const Divider(
                 color: Colors.black45,
@@ -72,12 +82,18 @@ class MainTab extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.ballot),
                 title: Text("Syarat & Ketentuan"),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Syarat()));
+                },
               ),
               ListTile(
                 leading: Icon(Icons.book),
                 title: Text("Tentang Aplikasi"),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Tentang()));
+                },
               ),
             ],
           ),
