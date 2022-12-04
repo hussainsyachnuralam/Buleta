@@ -20,7 +20,7 @@ class _AgendaState extends State<Agenda> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Agenda'),
+        title: Text('Kalender'),
         backgroundColor: Colors.blueGrey,
       ),
       body: content(),

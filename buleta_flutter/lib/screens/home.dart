@@ -44,7 +44,7 @@ class _HomeState extends State<Home> {
               ),
               ListTile(
                 leading: Icon(Icons.view_agenda),
-                title: Text("Agenda"),
+                title: Text("Kalendar"),
                 onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Agenda()));
