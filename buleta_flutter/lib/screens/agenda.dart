@@ -55,6 +55,7 @@ class _AgendaState extends State<Agenda> {
       children: [
         Container(
           child: TableCalendar(
+            rowHeight: 43.0,
             availableGestures: AvailableGestures.all,
             selectedDayPredicate: (day) => isSameDay(day, today),
             focusedDay: today,
