@@ -30,12 +30,12 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              height: 300,
-              width: 300,
+              height: 200,
+              width: 200,
               child: Image.asset("assets/palangkaraya.png"),
             ),
             Text(
-              "Eventder",
+              "Media Center",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
           ],
