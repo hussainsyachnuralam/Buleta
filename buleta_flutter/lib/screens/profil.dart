@@ -33,6 +33,9 @@ class _ProfilState extends State<Profil> {
               padding: EdgeInsets.symmetric(horizontal: 10.0),
               child: Column(
                 children: [
+                  const SizedBox(
+                    height: 20,
+                  ),
                   Text(
                     "Berdasarkan Peraturan Daerah Kota Palangka Raya Nomor : 11 Tahun 2016 tentang Pembentukan dan Susunan Perangkat Daerah Kota Palangka Raya dan Peraturan Menteri Komunikasi dan Informatika RI Nomor : 14 Tahun 2016 tentang Pedoman Nomenklatur Perangkat Daerah Bidang Komunikasi dan Informatika, maka Dinas Komunikasi, Informatika, Statistik dan Persandian Kota Palangka Raya memiliki peran yang sangat strategis dalam pengembangan Teknologi Informasi dan Komunikasi (TIK), mengingat perkembangan TIK saat ini semakin pesat, dapat dipastikan pemanfaatan TIK oleh masyarakat sudah menjadi kebutuhan dalam menjalankan aktivitasnya.",
                     style: TextStyle(fontSize: 16.0),
