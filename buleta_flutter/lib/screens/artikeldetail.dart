@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class Profil extends StatefulWidget {
-  Profil({Key? key}) : super(key: key);
+class ArtikelDetail extends StatefulWidget {
+  ArtikelDetail({Key? key}) : super(key: key);
 
   @override
-  State<Profil> createState() => _ProfilState();
+  State<ArtikelDetail> createState() => _ArtikelDetailState();
 }
 
-class _ProfilState extends State<Profil> {
+class _ArtikelDetailState extends State<ArtikelDetail> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Profil Media Center'),
+          title: Text('Artikel'),
           backgroundColor: Colors.blueGrey,
         ),
         body: ListView(
@@ -23,7 +23,7 @@ class _ProfilState extends State<Profil> {
               child: Container(
                 margin: EdgeInsets.only(bottom: 10.0, left: 10.0),
                 child: Text(
-                  "Profil",
+                  "Post Title",
                   style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                 ),
               ),
