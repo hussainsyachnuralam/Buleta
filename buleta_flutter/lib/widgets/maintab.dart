@@ -5,7 +5,7 @@ import 'package:buleta_flutter/screens/profil.dart';
 import 'package:buleta_flutter/screens/syaratketentuan.dart';
 import 'package:buleta_flutter/screens/tentang.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+import '';
 
 class MainTab extends StatelessWidget {
   const MainTab({Key? key}) : super(key: key);
@@ -98,7 +98,7 @@ class MainTab extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar: menu(),
+        // bottomNavigationBar: menu(),
         // body: SafeArea(
         //     child: Column(
         //   children: [
@@ -121,34 +121,48 @@ class MainTab extends StatelessWidget {
   }
 }
 
-Widget menu() {
-  return Container(
-    color: Colors.blueGrey,
-    child: TabBar(
-      labelColor: Colors.white,
-      unselectedLabelColor: Color.fromARGB(73, 255, 255, 255),
-      indicatorSize: TabBarIndicatorSize.tab,
-      indicatorPadding: EdgeInsets.all(5.0),
-      indicatorColor: Colors.black,
-      // isScrollable: true,
-      tabs: [
-        Tab(
-          text: "Home",
-          icon: Icon(Icons.home),
-        ),
-        Tab(
-          text: "Artikel",
-          icon: Icon(Icons.newspaper),
-        ),
-        Tab(
-          text: "Galeri",
-          icon: Icon(Icons.photo),
-        ),
-        Tab(
-          text: "Kontak",
-          icon: Icon(Icons.contact_phone),
-        ),
-      ],
-    ),
-  );
+class Navbar extends StatefulWidget {
+  Navbar({Key? key}) : super(key: key);
+
+  @override
+  State<Navbar> createState() => _NavbarState();
 }
+
+class _NavbarState extends State<Navbar> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
+}
+
+// Widget menu() {
+//   return Container(
+//     color: Colors.blueGrey,
+//     child: TabBar(
+//       labelColor: Colors.white,
+//       unselectedLabelColor: Color.fromARGB(73, 255, 255, 255),
+//       indicatorSize: TabBarIndicatorSize.tab,
+//       indicatorPadding: EdgeInsets.all(5.0),
+//       indicatorColor: Colors.black,
+//       // isScrollable: true,
+//       tabs: [
+//         Tab(
+//           text: "Home",
+//           icon: Icon(Icons.home),
+//         ),
+//         Tab(
+//           text: "Artikel",
+//           icon: Icon(Icons.newspaper),
+//         ),
+//         Tab(
+//           text: "Galeri",
+//           icon: Icon(Icons.photo),
+//         ),
+//         Tab(
+//           text: "Kontak",
+//           icon: Icon(Icons.contact_phone),
+//         ),
+//       ],
+//     ),
+//   );
+// }
