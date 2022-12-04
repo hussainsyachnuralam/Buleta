@@ -1,4 +1,5 @@
 import 'package:buleta_flutter/screens/home.dart';
+import 'package:buleta_flutter/screens/splashscreen.dart';
 import 'package:buleta_flutter/widgets/maintab.dart';
 import 'package:buleta_flutter/widgets/navbar.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: NavBAr(),
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
