@@ -97,10 +97,10 @@ Widget menu() {
     color: Colors.blueGrey,
     child: TabBar(
       labelColor: Colors.white,
-      unselectedLabelColor: Colors.white70,
+      unselectedLabelColor: Color.fromARGB(73, 255, 255, 255),
       indicatorSize: TabBarIndicatorSize.tab,
       indicatorPadding: EdgeInsets.all(5.0),
-      indicatorColor: Colors.blue,
+      indicatorColor: Colors.black,
       // isScrollable: true,
       tabs: [
         Tab(
