@@ -1,3 +1,5 @@
+import 'package:buleta_flutter/screens/artikel.dart';
+import 'package:buleta_flutter/screens/profil.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -49,7 +51,10 @@ class MainTab extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.person),
                 title: Text("Profil Media Center"),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Profil()));
+                },
               ),
               ListTile(
                 leading: Icon(Icons.view_agenda),
@@ -60,6 +65,9 @@ class MainTab extends StatelessWidget {
                 leading: Icon(Icons.art_track),
                 title: Text("Berita Foto"),
                 onTap: () {},
+              ),
+              const Divider(
+                color: Colors.black45,
               ),
               ListTile(
                 leading: Icon(Icons.ballot),
