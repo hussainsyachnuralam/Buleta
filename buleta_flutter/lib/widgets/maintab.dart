@@ -47,22 +47,27 @@ class MainTab extends StatelessWidget {
           child: ListView(
             children: [
               ListTile(
-                title: Text("Profil"),
+                leading: Icon(Icons.person),
+                title: Text("Profil Media Center"),
                 onTap: () {},
               ),
               ListTile(
+                leading: Icon(Icons.view_agenda),
                 title: Text("Agenda"),
                 onTap: () {},
               ),
               ListTile(
+                leading: Icon(Icons.art_track),
                 title: Text("Berita Foto"),
                 onTap: () {},
               ),
               ListTile(
+                leading: Icon(Icons.ballot),
                 title: Text("Syarat & Ketentuan"),
                 onTap: () {},
               ),
               ListTile(
+                leading: Icon(Icons.book),
                 title: Text("Tentang Aplikasi"),
                 onTap: () {},
               ),
