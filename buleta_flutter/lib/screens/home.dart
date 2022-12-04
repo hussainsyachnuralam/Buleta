@@ -1,3 +1,4 @@
+import 'package:buleta_flutter/screens/agenda.dart';
 import 'package:buleta_flutter/screens/artikel.dart';
 import 'package:buleta_flutter/screens/profil.dart';
 import 'package:buleta_flutter/screens/syaratketentuan.dart';
@@ -46,7 +47,7 @@ class _HomeState extends State<Home> {
                 title: Text("Agenda"),
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Artikel()));
+                      MaterialPageRoute(builder: (context) => Agenda()));
                 },
               ),
               ListTile(

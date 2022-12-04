@@ -38,6 +38,7 @@ dependencies:
   get: ^4.6.5
   get_cli: ^1.8.1
   iconly: ^1.0.1
+  table_calendar: ^3.0.8
 
 dev_dependencies:
   flutter_test:

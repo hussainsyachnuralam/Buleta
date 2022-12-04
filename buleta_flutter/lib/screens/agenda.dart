@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:table_calendar/table_calendar.dart';
 
 class Agenda extends StatefulWidget {
   Agenda({Key? key}) : super(key: key);
@@ -8,6 +9,13 @@ class Agenda extends StatefulWidget {
 }
 
 class _AgendaState extends State<Agenda> {
+  DateTime today = DateTime.now();
+  void _onDaySelected(DateTime day, DateTime focusedDay) {
+    setState(() {
+      today = day;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,6 +23,7 @@ class _AgendaState extends State<Agenda> {
         title: Text('Agenda'),
         backgroundColor: Colors.blueGrey,
       ),
+      body: content(),
 
       // child: Container(
       //   child: ListView.builder(
@@ -38,6 +47,23 @@ class _AgendaState extends State<Agenda> {
       //     },
       //   ),
       // ),
+    );
+  }
+
+  Widget content() {
+    return Column(
+      children: [
+        Container(
+          child: TableCalendar(
+            availableGestures: AvailableGestures.all,
+            selectedDayPredicate: (day) => isSameDay(day, today),
+            focusedDay: today,
+            firstDay: DateTime.utc(2011, 10, 16),
+            lastDay: DateTime.utc(2055, 10, 16),
+            onDaySelected: _onDaySelected,
+          ),
+        ),
+      ],
     );
   }
 }
