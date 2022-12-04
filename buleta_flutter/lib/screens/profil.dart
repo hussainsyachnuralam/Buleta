@@ -28,8 +28,7 @@ class _ProfilState extends State<Profil> {
                 ),
               ),
             ),
-            Image.network(
-                "https://media.suara.com/pictures/970x544/2022/08/16/32338-danielle-newjeans-instagramcomnewjeans-official.jpg"),
+            Image.asset("assets/baliho.jpg"),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 10.0),
               child: Text(
