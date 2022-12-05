@@ -23,7 +23,10 @@ class _NavBArState extends State<NavBAr> {
         return Scaffold(
           body: IndexedStack(
             index: controller.tabIndex,
-            children: [Home(), Artikel(), Galeri(), Kontak()],
+            children: [
+              Artikel(),
+              Galeri(),
+            ],
           ),
           bottomNavigationBar: BottomNavigationBar(
               selectedItemColor: Colors.black,
@@ -31,7 +34,7 @@ class _NavBArState extends State<NavBAr> {
               currentIndex: controller.tabIndex,
               onTap: controller.changeTabIndex,
               items: [
-                _bottombarItem(IconlyBold.home, "Home"),
+                // _bottombarItem(IconlyBold.home, "Home"),
                 _bottombarItem(IconlyBold.paper, "Artikel"),
                 _bottombarItem(IconlyBold.image, "Galeri"),
                 _bottombarItem(IconlyBold.call, "Kontak"),

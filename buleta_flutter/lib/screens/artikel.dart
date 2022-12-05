@@ -1,4 +1,9 @@
+import 'package:buleta_flutter/screens/agenda.dart';
 import 'package:buleta_flutter/screens/artikeldetail.dart';
+import 'package:buleta_flutter/screens/beritafoto.dart';
+import 'package:buleta_flutter/screens/profil.dart';
+import 'package:buleta_flutter/screens/syaratketentuan.dart';
+import 'package:buleta_flutter/screens/tentang.dart';
 import 'package:buleta_flutter/services/post.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +23,55 @@ class _ArtikelState extends State<Artikel> {
         appBar: AppBar(
           title: Text('Artikel'),
           backgroundColor: Colors.blueGrey,
+        ),
+        drawer: Drawer(
+          child: ListView(
+            children: [
+              ListTile(
+                leading: Icon(Icons.person),
+                title: Text("Profil Media Center"),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Profil()));
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.view_agenda),
+                title: Text("Kalendar"),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Agenda()));
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.art_track),
+                title: Text("Berita Foto"),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => BeritaFoto()));
+                },
+              ),
+              const Divider(
+                color: Colors.black45,
+              ),
+              ListTile(
+                leading: Icon(Icons.ballot),
+                title: Text("Kebijakan Privasi"),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Syarat()));
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.book),
+                title: Text("Tentang Aplikasi"),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Tentang()));
+                },
+              ),
+            ],
+          ),
         ),
         body: Container(
           child: Container(

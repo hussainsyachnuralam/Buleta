@@ -8,10 +8,10 @@ import 'package:get/get.dart';
 class AppPage {
   static List<GetPage> routes = [
     GetPage(name: navbar, page: () => NavBAr()),
-    GetPage(name: home, page: () => Home()),
+    // GetPage(name: home, page: () => Home()),
     GetPage(name: artikel, page: () => Artikel()),
     GetPage(name: galeri, page: () => Galeri()),
-    GetPage(name: kontak, page: () => Kontak()),
+    // GetPage(name: kontak, page: () => Kontak()),
   ];
 
   static getnavbar() => navbar;
