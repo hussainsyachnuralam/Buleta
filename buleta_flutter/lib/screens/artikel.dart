@@ -21,7 +21,7 @@ class _ArtikelState extends State<Artikel> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Artikel'),
+          title: Text('Media Center'),
           backgroundColor: Colors.blueGrey,
         ),
         drawer: Drawer(
