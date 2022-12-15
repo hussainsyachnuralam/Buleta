@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reading_time/reading_time.dart';
 
 class ArtikelDetail extends StatelessWidget {
   final data;
@@ -65,4 +66,12 @@ class ArtikelDetail extends StatelessWidget {
       // ),
     );
   }
+}
+
+main(List<String> args) {
+  var reader = readingTime('text');
+  print(reader.words);
+  print(reader.msg);
+  print(reader.time);
+  print(reader.minutes);
 }

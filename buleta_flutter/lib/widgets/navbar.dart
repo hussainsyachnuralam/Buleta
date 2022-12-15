@@ -1,4 +1,5 @@
 import 'package:buleta_flutter/controller/controller.dart';
+import 'package:buleta_flutter/screens/agenda.dart';
 import 'package:buleta_flutter/screens/artikel.dart';
 import 'package:buleta_flutter/screens/galeri.dart';
 import 'package:buleta_flutter/screens/home.dart';
@@ -26,6 +27,7 @@ class _NavBArState extends State<NavBAr> {
             children: [
               Artikel(),
               Galeri(),
+              Agenda(),
             ],
           ),
           bottomNavigationBar: BottomNavigationBar(
@@ -36,8 +38,8 @@ class _NavBArState extends State<NavBAr> {
               items: [
                 // _bottombarItem(IconlyBold.home, "Home"),
                 _bottombarItem(IconlyBold.paper, "Artikel"),
-                _bottombarItem(IconlyBold.image, "Galeri"),
-                _bottombarItem(IconlyBold.call, "Kontak"),
+                _bottombarItem(IconlyBold.chart, "Kategori"),
+                _bottombarItem(IconlyBold.calendar, "Agenda"),
               ]),
         );
       },

@@ -1,6 +1,7 @@
 import 'package:buleta_flutter/screens/agenda.dart';
 import 'package:buleta_flutter/screens/artikeldetail.dart';
 import 'package:buleta_flutter/screens/beritafoto.dart';
+import 'package:buleta_flutter/screens/hubungi.dart';
 import 'package:buleta_flutter/screens/profil.dart';
 import 'package:buleta_flutter/screens/syaratketentuan.dart';
 import 'package:buleta_flutter/screens/tentang.dart';
@@ -35,20 +36,20 @@ class _ArtikelState extends State<Artikel> {
                       MaterialPageRoute(builder: (context) => Profil()));
                 },
               ),
-              ListTile(
-                leading: Icon(Icons.view_agenda),
-                title: Text("Kalendar"),
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Agenda()));
-                },
-              ),
+              // ListTile(
+              //   leading: Icon(Icons.view_agenda),
+              //   title: Text("Kalendar"),
+              //   onTap: () {
+              //     Navigator.push(context,
+              //         MaterialPageRoute(builder: (context) => Agenda()));
+              //   },
+              // ),
               ListTile(
                 leading: Icon(Icons.art_track),
-                title: Text("Berita Foto"),
+                title: Text("Hubungi Media Center"),
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => BeritaFoto()));
+                      MaterialPageRoute(builder: (context) => Hubungi()));
                 },
               ),
               const Divider(
