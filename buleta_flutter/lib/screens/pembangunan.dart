@@ -5,18 +5,18 @@ import 'package:buleta_flutter/screens/hubungi.dart';
 import 'package:buleta_flutter/screens/profil.dart';
 import 'package:buleta_flutter/screens/syaratketentuan.dart';
 import 'package:buleta_flutter/screens/tentang.dart';
-import 'package:buleta_flutter/services/pendidikanpost.dart';
+import 'package:buleta_flutter/services/pembangunanpost.dart';
 import 'package:flutter/material.dart';
 
-class Pendidikan extends StatefulWidget {
-  Pendidikan({Key? key}) : super(key: key);
+class Pembangunan extends StatefulWidget {
+  Pembangunan({Key? key}) : super(key: key);
 
   @override
-  State<Pendidikan> createState() => _PendidikanState();
+  State<Pembangunan> createState() => _PembangunanState();
 }
 
-class _PendidikanState extends State<Pendidikan> {
-  PendidikanPost postService = PendidikanPost();
+class _PembangunanState extends State<Pembangunan> {
+  PembangunanPost postService = PembangunanPost();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

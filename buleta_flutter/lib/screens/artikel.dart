@@ -2,6 +2,7 @@ import 'package:buleta_flutter/screens/agenda.dart';
 import 'package:buleta_flutter/screens/artikeldetail.dart';
 import 'package:buleta_flutter/screens/beritafoto.dart';
 import 'package:buleta_flutter/screens/hubungi.dart';
+import 'package:buleta_flutter/screens/kesehatan.dart';
 import 'package:buleta_flutter/screens/profil.dart';
 import 'package:buleta_flutter/screens/syaratketentuan.dart';
 import 'package:buleta_flutter/screens/tentang.dart';
@@ -68,7 +69,7 @@ class _ArtikelState extends State<Artikel> {
                 title: Text("Tentang Aplikasi"),
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Tentang()));
+                      MaterialPageRoute(builder: (context) => Kesehatan()));
                 },
               ),
             ],
