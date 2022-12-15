@@ -2,6 +2,8 @@ import 'package:buleta_flutter/screens/kesehatan.dart';
 import 'package:buleta_flutter/screens/pembangunan.dart';
 import 'package:buleta_flutter/screens/pendidikan.dart';
 import 'package:buleta_flutter/screens/pengumuman.dart';
+import 'package:buleta_flutter/screens/serbaserbi.dart';
+import 'package:buleta_flutter/screens/sosialbudaya.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -31,7 +33,7 @@ class _KategoriState extends State<Kategori> {
             Container(
               alignment: Alignment.center,
               child: Lottie.network(
-                  'https://assets10.lottiefiles.com/packages/lf20_px0ntw70.json',
+                  'https://assets2.lottiefiles.com/packages/lf20_bzp9fepi.json',
                   height: 300,
                   width: 300),
             ),
@@ -63,7 +65,7 @@ class _KategoriState extends State<Kategori> {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => Pendidikan(),
+                    builder: (context) => Serba(),
                   ),
                 );
               },
@@ -73,7 +75,7 @@ class _KategoriState extends State<Kategori> {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => Kesehatan(),
+                    builder: (context) => Sosbud(),
                   ),
                 );
               },

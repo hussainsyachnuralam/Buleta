@@ -50,7 +50,7 @@ class _ArtikelState extends State<Artikel> {
                 title: Text("Hubungi Media Center"),
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Hubungi()));
+                      MaterialPageRoute(builder: (context) => HubungiView()));
                 },
               ),
               const Divider(
@@ -69,7 +69,7 @@ class _ArtikelState extends State<Artikel> {
                 title: Text("Tentang Aplikasi"),
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Kesehatan()));
+                      MaterialPageRoute(builder: (context) => Tentang()));
                 },
               ),
             ],

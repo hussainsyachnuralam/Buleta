@@ -22,7 +22,7 @@ class _PengumumanState extends State<Pengumuman> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Kesehatan'),
+          title: Text('Pengumuman'),
           backgroundColor: Colors.blueGrey,
         ),
         // drawer: Drawer(
