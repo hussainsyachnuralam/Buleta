@@ -1,7 +1,7 @@
 import 'package:buleta_flutter/controller/controller.dart';
 import 'package:buleta_flutter/screens/agenda.dart';
 import 'package:buleta_flutter/screens/artikel.dart';
-import 'package:buleta_flutter/screens/galeri.dart';
+import 'package:buleta_flutter/screens/kategori.dart';
 import 'package:buleta_flutter/screens/home.dart';
 import 'package:buleta_flutter/screens/kontak.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +26,7 @@ class _NavBArState extends State<NavBAr> {
             index: controller.tabIndex,
             children: [
               Artikel(),
-              Galeri(),
+              Kategori(),
               Agenda(),
             ],
           ),

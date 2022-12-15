@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reading_time/reading_time.dart';
+// import 'package:share_plus/share.dart';
 
 class ArtikelDetail extends StatelessWidget {
   final data;
@@ -12,6 +13,18 @@ class ArtikelDetail extends StatelessWidget {
         appBar: AppBar(
           title: Text('Artikel'),
           backgroundColor: Colors.blueGrey,
+          // actions: [
+          //   Padding(
+          //     padding: EdgeInsets.all(10),
+          //     child: IconButton(
+          //       icon: Icon(Icons.share_outlined),
+          //       onPressed: () async {
+          //         final weburl = 'https://mediacenter.palangkaraya.go.id/';
+          //         await Share.share(weburl);
+          //       },
+          //     ),
+          //   )
+          // ],
         ),
         body: ListView(
           padding: EdgeInsets.all(8),
